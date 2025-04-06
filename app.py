@@ -1,4 +1,4 @@
-from groq_keys import *
+
 from pdfloader_to_text import pdfloader_to_text
 import streamlit as st
 import pandas as pd
@@ -6,7 +6,7 @@ from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
 llm=ChatGroq(
     temperature=0.05,
-    groq_api_key=llama3_70b_8192_key,
+    groq_api_key=st.secrets["GROQ_API_KEY"],
     model_name='llama3-70b-8192'
 )
 st.set_page_config(layout="wide")
