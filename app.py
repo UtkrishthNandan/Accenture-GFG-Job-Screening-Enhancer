@@ -7,7 +7,7 @@ from langchain_core.prompts import PromptTemplate
 llm=ChatGroq(
     temperature=0.05,
     groq_api_key=st.secrets["GROQ_API_KEY_VERSATILE"],
-    model_name='llama3.3-70b-versatile'
+    model_name='llama-3.3-70b-versatile'
 )
 st.set_page_config(layout="wide")
 st.markdown(
